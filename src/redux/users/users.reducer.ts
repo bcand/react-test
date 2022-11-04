@@ -14,6 +14,7 @@ const usersReducer = (state:IUsersState = INITIAL_STATE, action: IUsersAction) =
                 loading: true
             }
         case usersActionTypes.FETCH_USERS_FINISH:
+            console.log()
             return {
                 ...state,
                 userList: action.payload,
